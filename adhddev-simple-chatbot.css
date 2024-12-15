@@ -1,16 +1,17 @@
 :root {
-    --primary-color: #007bff;
+    --primary-color: #fff; /* Change the header strip color to white */
     --secondary-color: #f1f1f1;
-    --text-color: #fff;
+    --text-color: #333;  /* Dark text color for better contrast on the light background */
     --border-color: #ddd;
     --shadow-color: rgba(0, 0, 0, 0.1);
     --font-family: Arial, sans-serif;
+    --background-color: #000; /* Set the page background to black */
 }
 
 body {
     position: relative;
     font-family: var(--font-family);
-    background-color: #f4f4f4;
+    background-color: var(--background-color); /* Set overall background to black */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,8 +40,8 @@ body {
 }
 
 .chat-header, .chat-send {
-    background: var(--primary-color);
-    color: var(--text-color);
+    background: var(--primary-color);  /* White background for header */
+    color: var(--text-color);  /* Change text to dark color for contrast */
     padding: 10px;
 }
 
